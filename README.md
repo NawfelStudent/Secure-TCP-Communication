@@ -1,37 +1,37 @@
-# Secure TCP Communication
+# Communication TCP Sécurisée
 
 ## Description
-This project demonstrates secure communication between a client and a server using the TCP protocol. The security is ensured through the use of RSA for key exchange and AES for encrypting messages. The server is multithreaded, allowing it to handle multiple client connections simultaneously. This project serves as a practical example of integrating cryptography into network applications.
+Ce projet démontre une communication sécurisée entre un client et un serveur en utilisant le protocole TCP. La sécurité est assurée grâce à l'utilisation de RSA pour l'échange de clés et d'AES pour le chiffrement des messages. Le serveur est multithreadé, ce qui lui permet de gérer plusieurs connexions clients simultanément. Ce projet est un exemple pratique d'intégration de la cryptographie dans les applications réseau.
 
-## Features
-- **RSA Key Exchange**: Securely exchanges the AES session key between the client and server.
-- **AES Encryption**: Encrypts and decrypts messages exchanged between the client and server.
-- **Multithreaded Server**: Handles multiple client connections concurrently.
+## Fonctionnalités
+- **Échange de clés RSA** : Permet d'échanger de manière sécurisée la clé de session AES entre le client et le serveur.
+- **Chiffrement AES** : Chiffre et déchiffre les messages échangés entre le client et le serveur.
+- **Serveur multithreadé** : Gère plusieurs connexions clients en parallèle.
 
-## Requirements
-- Java SE 8 or higher
+## Prérequis
+- Java SE 8 ou supérieur
 
-## How to Run
-1. **Compile the Code**:
+## Instructions d'exécution
+1. **Compiler le code** :
    ```bash
    javac -d . server/ServerMT.java client/ClientTCP.java
    ```
 
-2. **Start the Server**:
+2. **Démarrer le serveur** :
    ```bash
    java server.ServerMT
    ```
 
-3. **Start the Client**:
+3. **Démarrer le client** :
    ```bash
    java client.ClientTCP
    ```
 
-4. **Test the Communication**:
-   - Enter a message in the client terminal.
-   - The server will decrypt the message, process it, and send an encrypted response back to the client.
+4. **Tester la communication** :
+   - Entrez un message dans le terminal du client.
+   - Le serveur déchiffrera le message, le traitera et renverra une réponse chiffrée au client.
 
-## Project Structure
+## Structure du projet
 ```
 Secure-TCP-Communication/
 ├── client/
@@ -41,5 +41,5 @@ Secure-TCP-Communication/
 └── README.md
 ```
 
-## License
-This project is licensed under the MIT License.
+## Licence
+Ce projet est sous licence MIT.
